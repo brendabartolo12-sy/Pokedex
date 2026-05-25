@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport"content="width=device-width,initial-scale=1.0">
+     <title>Mi Primera Pokedex</title>
+     <link rel="stylesheet"href="style.css">
+</head>
+<body>
+     <header>
+            <h1>Pokedex Preparatoria</h1>
+            <input type="text"id="buscador" placeholder="Busca un pokemon...">
+       </header>
+
+       <main id="pokedex-container" class="pokedex">
+     </main>
+
+    <div id="modal-pokemon" class="modal">
+  <div class="modal-content">
+    <span id="cerrar-modal">&times;</span>
+    <img id="modal-img" src="" alt="Pokemon">
+    <h2 id="modal-nombre">Nombre</h2>
+
+    <div class="modal-stats">
+      <p><strong>Altura:</strong> <span id="modal-altura"></span> m</p>
+      <p><strong>Peso:</strong> <span id="modal-peso"></span> kg</p>
+      <p><strong>HP (Vida):</strong> <span id="modal-hp"></span></p>
+      <p><strong>Ataque:</strong> <span id="modal-ataque"></span></p>
+      <p><strong>Defensa:</strong> <span id="modal-defensa"></span></p>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>         

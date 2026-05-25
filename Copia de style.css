@@ -1,0 +1,132 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	background-color: #f4f4f4;
+	text-align: center;
+}
+
+header{
+	background-color: #ef5350;
+	padding: 20px;
+	color: white;
+}
+
+#buscador {
+	padding: 10px;
+	width: 300px;
+	boeder-radius: 20px;
+	border: none;
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Practica 3: CSS Grid para el contenedor*/
+.pokedex{
+	Display: grid;
+    Grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    Gap: 20px;
+    Padding: 40px;
+    Max-width: 1200px;
+    Margin: 0 auto;
+}
+
+/* Práctica 2: Estilos de la tarjeta */
+.card {
+    Background-color: white;
+    Border-radius: 15px;
+    Box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    Padding: 20px;
+    Transition: transform 0.2s;
+    Cursor: pointer;
+}
+
+.card:hover {
+    Transform: translateY(-5px);
+}
+
+.card img {
+    Width: 120px;
+    Height: 120px;
+    Background-color: rgba(255, 255, 255, 0.6);
+    Border-radius: 50%;
+    Padding: 10px;
+}
+
+.number {
+    Background-color: rgba(0,0,0,0.1);
+    Border-radius: 10px;
+    Padding: 5px 10px;
+    Font-size: 0.8rem;
+    Font-weight: bold;
+}
+/* Practica 10: Estilos de la Ventana Modal */
+
+/* El fondo oscuro que cubre toda la pantalla */
+.modal {
+  display: none; /* Muy importante! Oculto por defecto */
+  position: fixed;
+  z-index: 1000; /* Asegura que esté por encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Negro con transparencia */
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+}
+
+/* La caja blanca con la información */
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: aparecer 0.3s ease-out; /* Pequeña animación extra */
+}
+
+/* Animación para que el modal no aparezca de golpe */
+@keyframes aparecer {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content img {
+  width: 150px;
+  height: 150px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* El botón de la 'X' para cerrar */
+#cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+#cerrar-modal:hover {
+  color: black;
+}
+
+/* Caja gris claro para las estadísticas */
+.modal-stats {
+  text-align: left;
+  margin-top: 15px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
